@@ -1,0 +1,60 @@
+20 Important HTML & CSS Questions with Answers
+1) What is the purpose of the <!DOCTYPE html> declaration?
+Answer: It defines the HTML version and helps the browser render the page correctly.
+
+2) What is semantic HTML? Give two examples.
+Answer: Semantic HTML uses meaningful tags like <header>, <nav>, <main> instead of generic <div>.
+
+3) What does the <meta viewport> tag do?
+Answer: It controls layout on mobile browsers by setting the viewport size and scale.
+
+4) Difference between <div> and <section>?
+Answer: <div> is generic. <section> is semantic and groups related content.
+
+5) Common attributes for the <img> tag?
+Answer: src, alt, width, height, title.
+
+6) How to center a <div> horizontally?
+Answer: Use margin: 0 auto; and set a width.
+
+7) Difference between class and id selectors?
+Answer: Class can be reused, id must be unique.
+
+8) Explain the CSS box model.
+Answer: It includes content, padding, border, and margin.
+
+9) What does display: flex; do?
+Answer: Makes a container a flexbox for flexible layout.
+
+10) What is CSS specificity? Which is more specific: #id or .class?
+Answer: Specificity decides which rule applies. #id is more specific than .class.
+
+11) How to create a link that opens in a new tab?
+Answer: Use <a href='' target='_blank'>.</a>
+
+12) Purpose of alt in <img>?
+Answer: Shows alternative text if image fails. Improves accessibility.
+
+13) Difference between <ul> and <ol>?
+Answer: <ul> is unordered (bullets). <ol> is ordered (numbers).
+
+14) What is a form element?
+Answer: An element that collects user input, e.g., <form><input></form>.
+
+15) Purpose of placeholder attribute?
+Answer: Shows hint text inside an input until user types.
+
+16) How to make a background image cover the screen?
+Answer: Use background-size: cover;
+
+17) What does position: absolute; do?
+Answer: Positions element relative to nearest positioned ancestor.
+
+18) Difference between inline and block elements?
+Answer: Inline doesn't break line, block starts on new line and takes full width.
+
+19) How to add Google Fonts?
+Answer: Link in <head> and use font-family in CSS.
+
+20) What is a CSS pseudo-class? Example?
+Answer: Defines element state, e.g., a:hover { color: red; }
