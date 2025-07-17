@@ -1,46 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Tailwind CSS layout examples" />
+    <meta
+      name="description"
+      content="Various responsive layouts using Tailwind CSS"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Layouts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-900 p-4 space-y-12">
+    <!-- Row and column layout (simple grid) -->
+    <div class="section-cover">
+      <h2 class="text-xl font-bold mb-2">
+        Simple Grid (sm:grid-cols-3, md:grid-cols-2)
+      </h2>
+      <div class="grid sm:grid-cols-3 md:grid-cols-2 gap-5">
+        <div class="bg-white p-4 shadow rounded">1</div>
+        <div class="bg-white p-4 shadow rounded">2</div>
+        <div class="bg-white p-4 shadow rounded">3</div>
+      </div>
+    </div>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    * {
-      margin: 0;
-      box-sizing: border-box;
-    }
+    <!-- Grid with column span on different breakpoints -->
+    <div class="section-cover">
+      <h2 class="text-xl font-bold mb-2">
+        Responsive Grid with Span (md:col-span-6/3/3)
+      </h2>
+      <div class="grid sm:grid-cols-3 md:grid-cols-12 gap-5">
+        <div class="md:col-span-6 bg-blue-100 p-4 rounded shadow">1</div>
+        <div class="md:col-span-3 bg-blue-200 p-4 rounded shadow">2</div>
+        <div class="md:col-span-3 bg-blue-300 p-4 rounded shadow">3</div>
+      </div>
+    </div>
 
-    .parent {
-      height: 100vh;
-      width: 100%;
-      background-color: yellow;
-      /* padding: 20px; */
-      /* overflow: hidden; */
-      /* border: 1px solid yellow; */
-    }
+    <!-- Full-width banner -->
+    <div class="section-cover">
+      <h2 class="text-xl font-bold mb-2">Full-width Banner</h2>
+      <div
+        class="bg-green-200 p-6 text-center text-lg font-semibold rounded shadow"
+      >
+        Welcome to the Tailwind CSS Layout Showcase!
+      </div>
+    </div>
 
-    .box {
-      background-color: green;
-      width: 200px;
-      height: 200px;
-      margin-bottom: 20px; /* margin inside the yellow area */
-      margin-top: 2rem;
-    }
+    <!-- Two-column layout -->
+    <div class="section-cover">
+      <h2 class="text-xl font-bold mb-2">Two-Column Layout</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded shadow">Left Column</div>
+        <div class="bg-white p-6 rounded shadow">Right Column</div>
+      </div>
+    </div>
 
-    .child2 {
-      background-color: red;
-      width: 200px;
-      height: 200px;
-    }
-  </style>
-  <title>Document</title>
-</head>
+    <!-- Sidebar + Main Content layout -->
+    <div class="section-cover">
+      <h2 class="text-xl font-bold mb-2">Three-Column Layout with Sidebar</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="md:col-span-1 bg-gray-100 p-4 rounded shadow">Sidebar</div>
+        <div class="md:col-span-3 bg-white p-4 rounded shadow">
+          Main Content Area
+        </div>
+      </div>
+    </div>
 
-<body>
-  <div class="parent">
-    <div class="box child1">Box 1</div>
-    <div class="child2">Box 2</div>
-  </div>
-</body>
-
+    <!-- Card Grid Example -->
+    <div class="section-cover">
+      <h2 class="text-xl font-bold mb-2">Responsive Card Grid</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
+        <div class="bg-white p-4 rounded shadow">Card 1</div>
+        <div class="bg-white p-4 rounded shadow">Card 2</div>
+        <div class="bg-white p-4 rounded shadow">Card 3</div>
+        <div class="bg-white p-4 rounded shadow">Card 4</div>
+        <div class="bg-white p-4 rounded shadow">Card 5</div>
+        <div class="bg-white p-4 rounded shadow">Card 6</div>
+      </div>
+    </div>
+  </body>
 </html>
